@@ -1,0 +1,82 @@
+ESTRUTURA DE DADOS
+Clássica: maneira com que os dados são armazenados
+	pilhas
+	filas
+	listas
+
+classificar e organizar recuperação das informações
+	saber se já, ou não
+	buscas rápidas e fáceis
+
+
+PILHAS
+  conjuntos: vetores, arrays
+  empilhar valores, colocar na última posição
+  retira na ordem inversa
+  tipo de dado abstrato
+  operação push, colocar dado
+  pop retirar dado
+  last in first out
+
+FILA
+  o primeiro elemento a entrar é o primeiro a sair
+  first in first out 
+
+LISTAS
+  conceitos para valores armazenados em conjunto com tamanho infinito
+  pode ser pilha ou fila
+  pode ser classificada em ordem alfabética/numérica
+  ocupa memória sob demanda
+  mecanismos para criar e retirar informações, por ordem
+
+
+BUSCA DE ELEMENTOS [CONJUNTOS]
+  
+BUSCA SEQUENCIAL
+ a partir de um conjunto de valores, encontrar qual posição está determinado valor
+ ou retorna posição inválida (ex. -1)
+
+BUSCA BINÁRIA
+  eficiente, pré requisito: os valores devem estar ordenados
+  criar modelos para: reduzir o espectro de busca na metade
+    -- acha o meio, se é o valor buscado ok
+	 se não, vê se o buscado é maior ou menor que este do meio
+       procura dele pra frente ou pra trás
+	 e assim vai deslocando o inicio e fim por metades até achar, ou cruzar
+
+a complexidade é de ordem logarítmica
+ex. log 64 base 2 = 8 (2^8=64)
+em caso de não encontrado foram 8 passos num conj de 64 elementos
+
+ALGORITMOS DE ORDENAÇÃO
+BUBBLE SORT
+  dado um conjunto de valores, pega o primeiro valor em relação ao próximo
+  se o valor comparado é maior que o próximo, troca
+  passa a comparar com o próximo e assim vai
+  valores pesados no fundo, valores leves na ponta
+  - não é muito eficiente 
+  - se inserir um novo valor deve reordenar para nova busca
+INSERTION SORT
+  pega um elemento aleatório e desloca até o ponto desejado
+SELECTION SORT
+  percorre o vetor, acha o maior e já coloca na última posição
+  segundo maior, coloca na penúltima e assim por diante
+QUICK SORT
+  quebra os vetores em sub-vetores
+  desordenados, porém uma metade maior que o elemento central e outra metade tudo menor que o central
+
+
+ESTRUTURAS DE ORDENAÇÃO
+HASH
+  tabela de palavras chave e valores
+  evitar repetição
+  chave convertida para uma posição
+  acessa o elemento diretamente por mapeamento da informação para posição
+  apenas um passo
+
+ÁRVORE
+  estrutura hierárquica
+  elemento central: x, se for o buscado ok
+  se for menor, estará ao lado esquerdo
+  senão estará na decendencia no lado direito
+  esquerdo: menor, direito: maior
